@@ -24,14 +24,19 @@ This project automates the process of fetching weather data from Open-Meteo.com 
 
 ### Steps
 ```bash
-# Clone the repository
+# Clone the repository 
 git clone https://github.com/Alex5022/weather_data_pipeline.git
 cd weather_data_pipeline
 
 # Build the Docker image and run the pipeline
-docker-compose up
+docker compose up
 ```
+OR
 
-To open the database and inspect the data, run:
+Download zip file, open it in in terminal or code viewer and run
+```bash
+docker compose up
+```
+#### To open the database and inspect the data, run:
 ```bash
 docker exec -it postgres-db psql -U postgres -d weather_db 
