@@ -1,0 +1,44 @@
+[
+	{
+		"latitude": [28.6244, 52, 64],
+		"longitude": [76.9176, 20, 26],
+		"hourly": ["temperature_2m", "precipitation", "relative_humidity_2m"],
+		"forecast_days": 16
+	},
+	
+    {
+		"latitude": 47.25, 
+		"longitude": 28.5833,
+		"hourly": ["temperature_2m", "precipitation", "relative_humidity_2m"],
+		"forecast_days": 16
+	},
+	{
+		"latitude": 52.374, 
+		"longitude": 4.8897,
+		"hourly": ["temperature_2m", "precipitation", "relative_humidity_2m"],
+		"forecast_days": 16
+	},
+	{
+		"latitude": 36.175, 
+		"longitude": -115.1372,
+		"hourly": ["temperature_2m", "precipitation", "relative_humidity_2m"],
+		"forecast_days": 16
+	},
+	{
+		"latitude": 35.6895, 
+		"longitude": 35.6895,
+		"hourly": ["temperature_2m", "precipitation", "relative_humidity_2m"],
+		
+		"forecast_days": 16
+	},
+	{
+		"latitude": 64, 
+		"longitude": 26,
+		"hourly": ["temperature_2m", "precipitation", "relative_humidity_2m"],
+		
+		"forecast_days": 16
+	}
+
+	
+
+]

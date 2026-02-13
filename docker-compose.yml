@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: weather_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql
+
+  app:
+    build: .
+    container_name: etl_pipeline
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgresql://postgres:secret@postgres:5432/weather_db
+    volumes:
+      - .:/app
+      - ./downloads:/app/downloads
+volumes:
+  pgdata:
