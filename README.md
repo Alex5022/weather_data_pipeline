@@ -5,7 +5,7 @@ A containerized Python pipeline for fetching, processing, and storing weather da
 ---
 
 ## Overview
-This project automates the collection of weather data, transforming it into structured formats suitable for analysis or integration with other systems. It leverages Docker for reproducibility and portability, ensuring consistent deployments across environments.
+This project automates the process of fetching weather data from Open-Meteo.com APIs, transforming it into structured records, and persisting it inside a PostgreSQL container. It is designed for reproducibility, scalability, and easy integration with analytics or visualization tools.
 
 ---
 
@@ -17,7 +17,7 @@ This project automates the collection of weather data, transforming it into stru
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Docker & Docker Compose installed
@@ -27,6 +27,6 @@ This project automates the collection of weather data, transforming it into stru
 # Clone the repository
 git clone https://github.com/Alex5022/weather_data_pipeline.git
 cd weather_data_pipeline
-
+  OR
 # Build the Docker image and run the pipeline
 docker-compose up
