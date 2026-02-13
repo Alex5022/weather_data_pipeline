@@ -5,7 +5,7 @@ A containerized Python pipeline for fetching, processing, and storing weather da
 ---
 
 ## Overview
-This project automates the process of fetching weather data from Open-Meteo.com APIs, transforming it into structured records, and persisting it inside a PostgreSQL container. It is designed for reproducibility, scalability, and easy integration with analytics or visualization tools.
+This project automates the process of fetching weather data from **Open-Meteo.com** APIs, transforming it into structured records, and persisting it inside a PostgreSQL container. It is designed for reproducibility, scalability, and easy integration with analytics or visualization tools.
 
 ---
 
@@ -31,12 +31,13 @@ cd weather_data_pipeline
 # Build the Docker image and run the pipeline
 docker compose up
 ```
-OR
 
-Download zip file, open it in in terminal or code viewer and run
+Alternatively, download the ZIP file, extract it, open the folder in your terminal or code editor, and run:
 ```bash
 docker compose up
 ```
+
+## Data Access
 #### To open the database and inspect the data, run:
 ```bash
 docker exec -it postgres-db psql -U postgres -d weather_db 
