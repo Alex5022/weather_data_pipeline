@@ -88,7 +88,7 @@ async def fetch_all_weather_data(url,params_list):
 
 
 def load_params(params_filepath):
-    with open('weather_fetch_params.json', mode = 'r') as file:
+    with open(params_filepath, mode = 'r') as file:
         return json.load(file)
 
 
