@@ -21,6 +21,5 @@ services:
       DATABASE_URL: postgresql://postgres:secret@postgres:5432/weather_db
     volumes:
       - .:/app
-      - ./downloads:/app/downloads
 volumes:
   pgdata:
